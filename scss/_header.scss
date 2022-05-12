@@ -1,0 +1,33 @@
+$bg-primary: rgba(137, 196, 244,1);
+
+.header {
+    position: static;
+    max-height: 100px;
+    & nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $bg-primary;
+
+        &.header__nav {
+            display: flex;
+        }
+    }
+}
+
+.nav__block--logo {
+    & img {
+        max-height: 50px;
+    }
+}
+
+.nav__block--links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    & .nav__link {
+        padding: 20px;
+    }
+}
