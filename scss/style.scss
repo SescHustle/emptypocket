@@ -1,5 +1,8 @@
 @import "_reset.scss";
 @import "_header.scss";
+@import "_footer.scss";
+
+$h1-color: rgba(29, 50, 51, 0.911);
 
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,8 +17,34 @@ body {
 
 .main {
     flex: 1 1 auto;
+    max-width: 1180px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__body {
+    flex: 1 1 auto;
 }
 
 .header {
     position: static;
+}
+
+.footer {
+    background-color: rgba(0, 255, 45, 0.2);
+}
+
+.h1{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: $h1-color;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.h2 {
+    font-size: 2rem;
 }
