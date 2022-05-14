@@ -11,11 +11,15 @@ body {
 
 tr, td {
     border: 2px solid darkslategrey;
+    padding: 1rem;
+    vertical-align: middle;
 }
 
 th {
     border: 2px solid darkslategrey;
     font-weight: bold;
+    padding: 1rem;
+    vertical-align:middle;
 }
 
 table {
@@ -41,6 +45,9 @@ table {
 
 .main__body {
     flex: 1 1 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
