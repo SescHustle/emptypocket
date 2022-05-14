@@ -1,60 +1,150 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Expenses</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <title>Overview</title>
 </head>
-
 <body>
-    <header class="header">
-        <nav class="nav header__nav">
-            <div class="nav__block">
-                <a class="nav__block--logo" href="/index.html">
-                    <img src="/assets/images/logo.png" alt="App Logo">
-                </a>
-            </div>
-            <div class="nav__block">
-                <ul class="nav__block--links">
-                    <li class="nav__link">
-                        <a href="/index.html"> Overview </a>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header__row header-nav">
+                <div class="header-nav__logo">
+                    <a href="#">
+                        <img src="/assets/images/logo.png" alt="App Logo">
+                    </a>
+                </div>
+                <ul class="header-nav__links">
+                    <li class="header-nav__link">
+                        <a href="index.html">Overview</a>
                     </li>
-                    <li class="nav__link">
-                        <a href="#"> Link 2 </a>
+                    <li class="header-nav__link">
+                        <a href="/expenses.html">Expenses</a>
                     </li>
-                    <li class="nav__link">
-                        <a href="#"> Link 3 </a>
+                    <li class="header-nav__link">
+                        <a href="#">Incomes</a>
                     </li>
-                    <li class="nav__link">
-                        <a href="#"> Link 4 </a>
+                    <li class="header-nav__link">
+                        <a href="#">Reports</a>
                     </li>
-                    <li class="nav__link">
-                        <a href="#"> Link 5 </a>
+                    <li class="header-nav__link">
+                        <a href="#">Planning</a>
+                    </li>
+                </ul>
+                <div class="header-nav__profile">
+                    Profile dropdown
+                </div>
+            </nav>
+            <div class="header__row subheader">
+                <ul class="subheader__items">
+                    <li class="subheader__item">
+                        All Expenses
+                    </li>
+                    <li class="subheader__item">
+                        Group 1
+                    </li>
+                    <li class="subheader__item">
+                        Group 2
                     </li>
                 </ul>
             </div>
-            <div class="nav__block">
-                <div class="nav__block--profile">
-                    Profile
+        </header>
+        <main class="main">
+            <div class="main__header">
+                <h1 class="h1">Expenses</h1>
+            </div>
+            <div class="main__body">
+                <div class="expenses">
+                    <div class="expenses__header">
+                        <h2 class="h2 exenses__title">All Expenses</h2>
+                        <button class="btn expenses__add">
+                            Add New
+                        </button>
+                    </div>
+                    <table class="expenses__table">
+                        <tr class="expenses__row">
+                            <th class="expenses__column">
+                                Date
+                            </th>
+                            <th class="expenses__column">
+                                Name
+                            </th>
+                            <th class="expenses__column">
+                                Category
+                            </th>
+                            <th class="expenses__column">
+                                Amount
+                            </th>
+                            <th class="expenses__column">
+                                Comment
+                            </th>
+                        </tr>
+                        <tr class="expenses__row">
+                            <td class="expenses__column">
+                                Col 1
+                            </td>
+                            <td class="expenses__column">
+                                Col 2
+                            </td>
+                            <td class="expenses__column">
+                                Col 3
+                            </td>
+                            <td class="expenses__column">
+                                Col 4
+                            </td>
+                            <td class="expenses__column">
+                                Col 5
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-        </nav>
-    </header>
-    <main class="main">
-        Main
-    </main>
-    <footer class="footer">
-        Footer
-    </footer>
+        </main>
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__copyright">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, distinctio. Cum, explicabo
+                        quia recusandae provident dignissimos eum voluptatem, quae in cumque illo necessitatibus sint.
+                        Corporis.</p>
+                </div>
+                <nav class="footer__nav footer-nav">
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="/index.html">Homepage</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Profile</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="mailto:pavel.lovkiy@gmail.com">Contacts</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">License</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="footer__social social">
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <img src="assets/images/logo.png" alt="Logo" class="social__logo">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <img src="assets/images/logo.png" alt="Logo" class="social__logo">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <img src="assets/images/logo.png" alt="Logo" class="social__logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
-
 </html>

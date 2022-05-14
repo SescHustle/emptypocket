@@ -2,15 +2,15 @@ $bg-header: rgba(82, 16, 208, 0.2);
 $nav-link-color: #dda60d;
 $nav-link-underline-color: #650D1B;
 
-.header__nav {
+.header__row {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
     background-color: $bg-header;
     padding: 0.2rem 1rem;
     font-size: 20px;
-}
-
-.header-nav__row {
-    display: flex;
-    align-items: center;
 }
 
 .header-nav__logo {
@@ -48,4 +48,26 @@ $nav-link-underline-color: #650D1B;
 
 .header-nav__profile {
     color: #42134e;
+}
+
+.subheader {
+    background-color: rgba(203, 245, 190, 0.397);
+}
+
+.subheader__items {
+    margin: 5px auto;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+        min-width: 50%;
+    }
+}
+
+.subheader__item {
+    
+    &:hover {
+        text-decoration: underline;
+    }
 }

@@ -1,0 +1,26 @@
+.expenses {
+    display: flex;
+    flex-direction: column;
+}
+
+.expenses__header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 0 10px 0;
+}
+
+.exenses__title {}
+
+.expenses__add {
+    background-color: lightblue;
+
+}
+
+.expenses__table {
+    flex: 1 1 100%;
+}
+
+.expenses__row {}
+
+.expenses__column {}
