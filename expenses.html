@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Overview</title>
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
@@ -60,10 +61,24 @@
                 <div class="expenses">
                     <div class="expenses__header">
                         <h2 class="h2 exenses__title">All Expenses</h2>
-                        <button class="btn expenses__add">
+                        <button class="btn-expenses__add">
                             Add New
                         </button>
                     </div>
+                    <form class="expenses__add hidden">
+                        Date
+                        <input type="date" name="expense-date" id="expense-date">
+                        Name
+                        <input type="text" name="expense-name" id="expense-name">
+                        Category
+                        <select name="expense-category" label="Category" id="expense-category">
+                        </select>
+                        Amount
+                        <input type="number" name="expense-amount" id="expense-amount">
+                        Comment
+                        <input type="textarea" name="expense-comment" id="expense-comment">
+                        <button type="submit" name="expense-submit" id="expense-submit">Add</button>
+                    </form>
                     <table class="expenses__table">
                         <tr class="expenses__row">
                             <th class="expenses__column">
@@ -84,19 +99,19 @@
                         </tr>
                         <tr class="expenses__row">
                             <td class="expenses__column">
-                                Lorem, ipsum dolor.
-                            </td>
-                            <td class="expenses__column">
-                                Lorem ipsum dolor sit amet consectetur.
-                            </td>
-                            <td class="expenses__column">
-                                Lorem, ipsum.
-                            </td>
-                            <td class="expenses__column">
                                 Lorem.
                             </td>
                             <td class="expenses__column">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, enim?
+                                Ipsum.
+                            </td>
+                            <td class="expenses__column">
+                                Dolor
+                            </td>
+                            <td class="expenses__column">
+                                Sit.
+                            </td>
+                            <td class="expenses__column">
+                                Amet.
                             </td>
                         </tr>
                     </table>
@@ -106,8 +121,10 @@
         <footer class="footer">
             <div class="footer__row">
                 <div class="footer__copyright">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, distinctio. Cum, explicabo
-                        quia recusandae provident dignissimos eum voluptatem, quae in cumque illo necessitatibus sint.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, distinctio. Cum,
+                        explicabo
+                        quia recusandae provident dignissimos eum voluptatem, quae in cumque illo necessitatibus
+                        sint.
                         Corporis.</p>
                 </div>
                 <nav class="footer__nav footer-nav">
@@ -147,4 +164,7 @@
         </footer>
     </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+
 </html>

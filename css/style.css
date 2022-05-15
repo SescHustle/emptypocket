@@ -683,10 +683,6 @@ table {
   margin: 0 0 10px 0;
 }
 
-.expenses__add {
-  background-color: lightblue;
-}
-
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -734,6 +730,7 @@ table {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 1180px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -741,7 +738,6 @@ table {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -770,4 +766,8 @@ table {
 
 .h2 {
   font-size: 2rem;
+}
+
+.hidden {
+  display: none;
 }
