@@ -18,8 +18,9 @@ This application is a simple but feature rich (in the future) money tracker.
 git clone https://github.com/SescHustle/emptypocket
 ```
 
-2. Open `index.html` file.
-3. That's it, you can browse the application.
+2. Switch to `develop` branch.
+3. Open `index.html` file.
+4. That's it, you can browse the application.
 
 ### Working with database
 
