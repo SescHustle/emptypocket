@@ -521,7 +521,6 @@ table {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 0 50px;
 }
 
 .header-nav__link {
