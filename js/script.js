@@ -19,14 +19,14 @@ $(document).ready(function () {
 
   $("button.btn-expenses__add").click(function () {
     this.textContent = this.textContent === "Cancel" ? "Add New" : "Cancel";
-    $("form.expenses__add").toggleClass("hidden");
+    $("form.expenses__add").toggleClass("d-none");
     console.log(new Date().toISOString().slice(0, 10));
     $("#expense-date").val(new Date().toISOString().slice(0, 10));
   });
 
   $("form.expenses__add").submit(function (e) {
     e.preventDefault();
-    $(this).toggleClass("hidden");
+    $(this).toggleClass("d-none");
     $("button.btn-expenses__add").text("Add New");
     const expense = {
       name: this.querySelector("#expense-name").value,

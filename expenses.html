@@ -15,40 +15,62 @@
 <body>
     <div class="wrapper">
         <html-include src="./layouts/templates/header.html" no-shadow="true"></html-include>
-        <main class="main">
-            <div class="main__header">
+        <main class="main container-md">
+            <div class="row main__header my-3">
                 <h1 class="h1">Expenses</h1>
             </div>
-            <div class="main__body">
-                <div class="expenses">
-                    <div class="expenses__header">
-                        <h2 class="h2 exenses__title">All Expenses</h2>
-                        <button class="btn-expenses__upload">
-                            Upload expenses
-                        </button>
-                        <button class="btn-expenses__save">
-                            Save expenses
-                        </button>
-                        <button class="btn-expenses__add">
-                            Add New
-                        </button>
+            <div class="row main__body">
+                <div class="expenses col-12">
+                    <div class="row expenses__header">
+                        <h2 class="h2 exenses__title col-12 col-sm-3 text-center">All Expenses</h2>
+                        <div class="my-1 my-sm-auto col-12 col-sm-3 text-center">
+                            <button class="btn btn-secondary btn-expenses__upload col-12 col-sm-auto">
+                                Upload expenses
+                            </button>
+                        </div>
+                        <div class="my-1 my-sm-auto col-12 col-sm-3 text-center">
+                            <button class="m-auto btn btn-secondary btn-expenses__save col-12 col-sm-auto">
+                                Save expenses
+                            </button>
+                        </div>
+                        <div class="my-1 my-sm-auto col-12 col-sm-3 text-center">
+                            <button class="m-auto btn btn-primary btn-expenses__add col-12 col-sm-auto">
+                                Add New
+                            </button>
+                        </div>
                     </div>
-                    <form class="expenses__add hidden">
-                        Date
-                        <input type="date" name="expense-date" id="expense-date">
-                        Name
-                        <input type="text" name="expense-name" id="expense-name">
-                        Category
-                        <select name="expense-category" label="Category" id="expense-category">
-                            <option>Category 1</option>
-                            <option>Category 2</option>
-                            <option>Category 3</option>
-                        </select>
-                        Amount
-                        <input type="number" name="expense-amount" id="expense-amount">
-                        Comment
-                        <input type="textarea" name="expense-comment" id="expense-comment">
-                        <button type="submit" name="expense-submit" id="expense-submit">Add</button>
+                    <form class="my-3 row row-cols-1 row-cols-sm-3 expenses__add d-none">
+                        <div class="my-1 my-sm-auto col-12 col-sm-4">
+                            <input type="date" placeholder="Date" name="expense-date" id="expense-date"
+                                class="w-100 form-control">
+                        </div>
+                        <div class="my-1 my-sm-auto col-12 col-sm-4 col-4">
+                            <input type="text" placeholder="Name" name="expense-name" id="expense-name"
+                                class="form-control w-100">
+                        </div>
+                        <div class="my-1 my-sm-auto col-12 col-sm-4 col-4">
+                            <select name="expense-category" label="Category" id="expense-category"
+                                class="form-select w-100">
+                                <option selected disabled class="bg-dark">Choose category...</option>
+                                <option>Category 1</option>
+                                <option>Category 2</option>
+                                <option>Category 3</option>
+                            </select>
+                        </div>
+                        <div class="my-1 my-sm-auto col-12 col-sm-4 col-4">
+                            <input type="number" placeholder="Amount" name="expense-amount" id="expense-amount"
+                                class="w-100 form-control">
+                        </div>
+                        <div class="my-1 my-sm-auto col-12 col-sm-4 col-4">
+                            <input type="textarea" placeholder="Comment" name="expense-comment" id="expense-comment"
+                                class="w-100 form-control">
+                        </div>
+                        <div class="my-1 my-sm-auto col-12 col-sm-4 col-4">
+                            <button type="submit" name="expense-submit" id="expense-submit"
+                                class="btn btn-outline-success w-100">
+                                Add
+                            </button>
+                        </div>
                     </form>
                     <table class="expenses__table">
                         <tr class="expenses__row">
