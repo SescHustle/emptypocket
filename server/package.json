@@ -1,7 +1,7 @@
 {
   "name": "emptypocket-backend",
-  "version": "1.0.0",
-  "description": "Backend for emptypocket app",
+  "version": "0.1.0",
+  "description": "Backend for EmptyPocket App",
   "main": "server.js",
   "type": "module",
   "scripts": {

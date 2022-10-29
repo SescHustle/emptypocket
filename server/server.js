@@ -5,7 +5,7 @@ const app = express();
 const port = config.port;
 
 app.listen(port, () => {
-  console.log(`Express app is working in localhost:${port}/`);
+  console.log(`Express app is working at https://localhost:${port}`);
 });
 
 app.get("/", (req, res) => {
