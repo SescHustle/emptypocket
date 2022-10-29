@@ -1,0 +1,25 @@
+{
+  "name": "emptypocket-backend",
+  "version": "1.0.0",
+  "description": "Backend for emptypocket app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev-mode": "nodemon server.js",
+    "test": "test"
+  },
+  "keywords": [
+    "backend",
+    "nodejs",
+    "server"
+  ],
+  "author": "Pavel Lovkii",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
