@@ -1,0 +1,5 @@
+[
+    {"name":"Some goods","date":"2022-02-04","category":"Category 1","amount":"300","comment":"Dollars"},
+    {"name":"More goods","date":"2022-07-18","category":"Category 2","amount":"250","comment":"Euros"},
+    {"name":"Roastbeef","date":"2022-07-19","category":"Category 3","amount":"400","comment":"So tasty"}
+]
