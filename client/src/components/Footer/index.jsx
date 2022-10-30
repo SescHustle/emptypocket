@@ -1,7 +1,4 @@
 import React from 'react';
-import styles from './Footer.module.scss';
-import bootstrap from 'bootstrap/dist/css/bootstrap.css';
-import logo from '../../assets/logo.png';
 
 function Footer () {
     return (
