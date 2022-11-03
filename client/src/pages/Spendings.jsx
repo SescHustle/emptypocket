@@ -1,3 +1,5 @@
+import React from 'react';
+
 function Spendings() {
     return (
 <main className="main container-md">
