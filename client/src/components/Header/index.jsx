@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../assets/logo.png'
 
 function Header () {
   return (
@@ -6,7 +7,7 @@ function Header () {
     <nav className="navbar navbar-expand-md navbar-dark bg-primary header-nav">
         <div className="container-fluid header__row">
             <a className="header-nav__logo" href="#">
-                <img src="../../assets/logo.png" alt="App Logo" />
+                <img src={logo} alt="App Logo" />
             </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"

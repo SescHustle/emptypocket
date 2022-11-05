@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../styles/Spendings.module.scss';
 
 function Spendings() {
     return (
@@ -8,7 +9,7 @@ function Spendings() {
             </div>
             <div className="row main__body">
                 <div className="expenses col-12">
-                    <div className="row expenses__header">
+                    <div className={styles.expenses__header}>
                         <h2 className="h2 exenses__title col-12 col-sm-3 text-center">All Expenses</h2>
                         <div className="my-1 my-sm-auto col-12 col-sm-3 text-center">
                             <button className="btn btn-secondary btn-expenses__upload col-12 col-sm-auto">
