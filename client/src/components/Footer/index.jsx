@@ -7,27 +7,27 @@ function Footer() {
 				<div className='row'>
 					<nav className='col-12 text-center'>
 						<ul className='row'>
-							<li className='col nav-item'>
+							<li className='col-12 col-sm nav-item'>
 								<a className='nav-link' href='/'>
 									Home
 								</a>
 							</li>
-							<li className='col nav-item'>
+							<li className='col-12 col-sm nav-item'>
 								<a className='nav-link' href='/'>
 									Spendings
 								</a>
 							</li>
-							<li className='col nav-item'>
+							<li className='col-12 col-sm nav-item'>
 								<a className='nav-link' href='/'>
 									Incomes
 								</a>
 							</li>
-							<li className='col nav-item'>
+							<li className='col-12 col-sm nav-item'>
 								<a className='nav-link' href='/'>
 									Reports
 								</a>
 							</li>
-							<li className='col nav-item'>
+							<li className='col-12 col-sm nav-item'>
 								<a className='nav-link' href='/'>
 									Planning
 								</a>
@@ -36,7 +36,7 @@ function Footer() {
 					</nav>
 				</div>
 				<div className='row'>
-					<div className='col'>
+					<div className='col-12 col-sm'>
 						<p>
 							Copyright <strong>COPY ICON</strong> Emptypocket
 						</p>
@@ -44,7 +44,7 @@ function Footer() {
 							Created and designed by <a href='github.com/seschustle'>Pavel Lovkii</a>
 						</p>
 					</div>
-					<div className='col'>
+					<div className='col col-sm'>
 						<ul className='row'>
 							<li className='col nav-item'>
 								<a
@@ -66,7 +66,7 @@ function Footer() {
 							</li>
 							<li className='col nav-item'>
 								<a
-									href='"mailto:plovkiy@yandex.ru'
+									href='mailto:plovkiy@yandex.ru'
 									rel='noreferrer'
 									target='_blank'
 									className='nav-link'>

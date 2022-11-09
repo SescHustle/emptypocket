@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png';
 function Header() {
 	return (
 		<header id='header'>
-			<nav className='navbar navbar-expand-md bg-info'>
+			<nav className='navbar navbar-expand-sm bg-info'>
 				<div className='container-fluid'>
 					<a className='navbar-brand' href='/'>
 						<img
