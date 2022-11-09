@@ -7,7 +7,13 @@ function Header() {
 			<nav className='navbar navbar-expand-md bg-info'>
 				<div className='container-fluid'>
 					<a className='navbar-brand' href='/'>
-						<img src={logo} className='img-fluid' width='32px' alt='App Logo' />
+						<img
+							src={logo}
+							className='img-fluid'
+							width='32px'
+							height='32px'
+							alt='App Logo'
+						/>
 					</a>
 					<button
 						className='navbar-toggler'
@@ -28,7 +34,12 @@ function Header() {
 							</li>
 							<li className='nav-item'>
 								<a className='nav-link' href='/'>
-									Expenses
+									Spendings
+								</a>
+							</li>
+							<li className='nav-item'>
+								<a className='nav-link' href='/'>
+									Incomes
 								</a>
 							</li>
 							<li className='nav-item'>
