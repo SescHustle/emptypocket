@@ -3,32 +3,20 @@ import React from 'react';
 function Spendings() {
 	return (
 		<main className='main container-sm'>
-			<div className='row main__header my-3'>
-				<h1 className='h1'>Expenses</h1>
+			<div className='row my-3'>
+				<h1 className='h1'>Spendings</h1>
 			</div>
-			<div className='row main__body'>
-				<div className='expenses col-12'>
-					<div className='row'>
-						<h2 className='h2 exenses__title col-12 col-sm-3 text-center'>
-							All Expenses
-						</h2>
-						<div className='my-1 my-sm-auto col-12 col-sm-3 text-center'>
-							<button className='btn btn-secondary btn-expenses__upload col-12 col-sm-auto'>
-								Upload expenses
-							</button>
-						</div>
-						<div className='my-1 my-sm-auto col-12 col-sm-3 text-center'>
-							<button className='m-auto btn btn-secondary btn-expenses__save col-12 col-sm-auto'>
-								Save expenses
-							</button>
-						</div>
-						<div className='my-1 my-sm-auto col-12 col-sm-3 text-center'>
-							<button className='m-auto btn btn-primary btn-expenses__add col-12 col-sm-auto'>
+			<div className='row'>
+				<div className='col-12'>
+					<div className='row justify-content-between'>
+						<h2 className='col-12 col-sm-auto'>All Spendings</h2>
+						<div className='my-1 my-sm-auto col-12 col-sm-auto'>
+							<button className='m-auto btn btn-primary col-12 col-sm-auto'>
 								Add New
 							</button>
 						</div>
 					</div>
-					<form className='my-3 row row-cols-1 row-cols-sm-3 expenses__add d-none'>
+					<form className='my-3 row row-cols-1 row-cols-sm-3'>
 						<div className='my-1 my-sm-auto col-12 col-sm-4'>
 							<input
 								type='date'
@@ -89,14 +77,16 @@ function Spendings() {
 							</button>
 						</div>
 					</form>
-					<table className='expenses__table'>
-						<tr className='expenses__row'>
-							<th className='expenses__column'>Date</th>
-							<th className='expenses__column'>Name</th>
-							<th className='expenses__column'>Category</th>
-							<th className='expenses__column'>Amount</th>
-							<th className='expenses__column'>Comment</th>
-						</tr>
+					<table className='table'>
+						<thead>
+							<tr className=''>
+								<th className=''>Date</th>
+								<th className=''>Name</th>
+								<th className=''>Category</th>
+								<th className=''>Amount</th>
+								<th className=''>Comment</th>
+							</tr>
+						</thead>
 					</table>
 				</div>
 			</div>
