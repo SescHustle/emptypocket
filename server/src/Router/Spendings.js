@@ -22,4 +22,4 @@ router.delete('/:id', (req, res) => {
 	res.status(200).send(`Delete spending with id ${req.params.id}`);
 });
 
-module.exports = {router};
+module.exports = router;
