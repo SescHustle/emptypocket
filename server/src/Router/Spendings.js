@@ -8,7 +8,14 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-	res.status(200).send(`Get spending with id ${req.params.id}`);
+	let status = 404;
+	let data = 'No spending found for given ID.';
+	const spending = controller.getCertain(req.params.id);
+	if (spending) {
+		status = 200;
+		data = spending;
+	}
+	res.status(status).send(data);
 });
 
 router.post('/', (req, res) => {

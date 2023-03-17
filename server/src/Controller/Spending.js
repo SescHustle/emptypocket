@@ -11,6 +11,10 @@ class SpendingController {
 	getAll() {
 		return this.#model.getAll();
 	}
+
+	getCertain(id) {
+		return this.#model.getById(id);
+	}
 }
 
 module.exports = new SpendingController();

@@ -2,14 +2,20 @@
 const fs = require('fs');
 
 class SpendingModel {
-	#spendings;
+	#spendings = [];
 
 	constructor() {
-		this.#spendings = JSON.parse(fs.readFileSync(__dirname + '/spendings.json'));
+		this.#spendings = Array.from(JSON.parse(fs.readFileSync(__dirname + '/spendings.json')));
 	}
 
 	getAll() {
 		return this.#spendings;
+	}
+
+	getById(id) {
+		const found = this.#spendings.find((spending) => spending.id === parseInt(id));
+
+		return found || null;
 	}
 }
 
