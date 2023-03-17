@@ -1,9 +1,10 @@
 const express = require('express');
+const controller = require('../Controller/Spending');
 
 const router = express.Router();
 
 router.get('/', (req, res) => {
-	res.status(200).send('Get all spendings');
+	res.status(200).send(controller.getAll());
 });
 
 router.get('/:id', (req, res) => {
