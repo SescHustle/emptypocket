@@ -15,6 +15,11 @@ class SpendingController {
 	getCertain(id) {
 		return this.#model.getById(id);
 	}
+
+	addNew(spending) {
+		console.log(spending);
+		return this.#model.add(spending);
+	}
 }
 
 module.exports = new SpendingController();

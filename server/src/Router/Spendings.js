@@ -19,7 +19,8 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-	res.status(200).send('Add new spending');
+	const spending = controller.addNew(req.body);
+	res.status(200).send(req.body);
 });
 
 router.patch('/:id', (req, res) => {
