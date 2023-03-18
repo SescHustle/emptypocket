@@ -1,5 +1,12 @@
 import React from 'react';
 
+function toggleAddNew(e) {
+	e.preventDefault();
+	e.target.textContent = e.target.textContent === 'Cancel' ? 'Add New' : 'Cancel';
+	const form = document.getElementById('addSpendingForm');
+	form.classList.toggle('d-none');
+}
+
 function Spendings() {
 	return (
 		<main className='main container-sm'>
@@ -11,12 +18,14 @@ function Spendings() {
 					<div className='row justify-content-between'>
 						<h2 className='col-12 col-sm-auto'>All Spendings</h2>
 						<div className='my-1 my-sm-auto col-12 col-sm-auto'>
-							<button className='m-auto btn btn-primary col-12 col-sm-auto'>
+							<button
+								className='m-auto btn btn-primary col-12 col-sm-auto'
+								onClick={toggleAddNew}>
 								Add New
 							</button>
 						</div>
 					</div>
-					<form className='my-3 row row-cols-1 row-cols-sm-3'>
+					<form id='addSpendingForm' className='my-3 row row-cols-1 row-cols-sm-3 d-none'>
 						<div className='my-1 my-sm-auto col-12 col-sm-4'>
 							<input
 								type='date'
