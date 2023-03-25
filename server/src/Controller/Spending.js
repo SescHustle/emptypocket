@@ -17,7 +17,6 @@ class SpendingController {
 	}
 
 	addNew(spending) {
-		console.log(spending);
 		return this.#model.add(spending);
 	}
 }
