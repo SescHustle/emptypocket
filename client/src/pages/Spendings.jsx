@@ -1,4 +1,5 @@
 import React from 'react';
+import SpendingsTable from '../components/SpendingsTable';
 
 function toggleAddNew(e) {
 	e.preventDefault();
@@ -86,17 +87,7 @@ function Spendings() {
 							</button>
 						</div>
 					</form>
-					<table className='table'>
-						<thead>
-							<tr className=''>
-								<th className=''>Date</th>
-								<th className=''>Name</th>
-								<th className=''>Category</th>
-								<th className=''>Amount</th>
-								<th className=''>Comment</th>
-							</tr>
-						</thead>
-					</table>
+					<SpendingsTable />
 				</div>
 			</div>
 		</main>
