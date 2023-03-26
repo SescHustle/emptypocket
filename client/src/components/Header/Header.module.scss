@@ -7,13 +7,13 @@ $nav-link-underline-color: #650D1B;
     align-items: center;
 }
 
-.header-nav {
+.header_nav {
     background-color: $bg-header;
     padding: 0.2rem 1rem;
     font-size: 20px;
 }
 
-.header-nav__logo {
+.header_nav__logo {
     display: flex;
     flex: 0 0 32px;
 
@@ -23,7 +23,7 @@ $nav-link-underline-color: #650D1B;
     }
 }
 
-.header-nav__links {
+.header_nav__links {
     flex: 1 1 auto;
     display: flex;
     justify-content: space-around;
